@@ -1,0 +1,113 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="utf-8">
+    	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title> MS SQL SERVER. </title>
+	<meta name="description" content="Information Technology">
+    	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    	<meta name="author" content="GR8">
+    	<link rel="shortcut icon" href="https://krebner.com/networkplus.ico" />
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <script>
+  
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script> 
+<style> body { background-color:whitesmoke; } </style>    
+</head>
+<body oncontextmenu="alert('Make it happen!');return false;" onselectstart="return false" ondragstart="return false" >
+<br>
+<div class="container-fluid text-center">
+    <br>
+	   <h1>List of books for the Microsoft SQL Server class.</h1>
+    <br>
+    <hr>
+</div>
+
+
+
+<br>
+<div class="container">
+
+<a href="https://www.amazon.com/SQL-Server-2019-Administrators-Guide/dp/1789954320/ref=sr_1_3?dchild=1&keywords=marek+chmel&qid=1633307687&sr=8-3" target="_blank" class="btn btn-lg btn-block rounded-pill btn-primary">
+
+SQL Server 2019 Administrator's Guide: A definitive guide for DBAs to implement, monitor, and maintain enterprise database solutions, 2nd Edition
+</a>
+<hr>
+
+
+<a href="https://www.amazon.com/T-SQL-Querying-Developer-Reference-Ben-Gan/dp/0735685045/ref=sr_1_3?crid=TL6N0TLE6NTE&dchild=1&keywords=itzik+ben-gan&qid=1633310732&sprefix=itzik+b%2Caps%2C199&sr=8-3" target="_blank" class="btn btn-lg btn-block rounded-pill btn-primary">
+
+
+T-SQL Querying (Developer Reference)
+
+</a>
+<hr>
+
+<a href="https://www.amazon.com/Hands-Server-Analysis-Services-multi-dimensional/dp/1800204760/ref=sr_1_5?dchild=1&keywords=business+intelligence+microsoft+sql+server+2019&qid=1633309691&sr=8-5" target="_blank" class="btn btn-lg btn-block rounded-pill btn-primary">
+
+Hands-On SQL Server 2019 Analysis Services: Design and query tabular and multi-dimensional models using Microsoft's SQL Server Analysis Services
+</a>
+<hr>
+
+</div>
+    
+
+    
+
+ <img src="https://krebner.com/schema.svg"
+      class="img-fluid mx-auto d-block">   
+    
+    <!--
+style="background-color: rgb(255, 255, 255);background-image: linear-gradient(-90deg, yellow, lightblue, lightgreen);"
+-->
+    
+<!-- These Javascript links are required for the proper functionality of Bootstrap 4. 
+And they should always be placed at the very end, near to the closing body tag. Exactly where they are right now. -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
