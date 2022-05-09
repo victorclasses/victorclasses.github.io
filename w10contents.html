@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="utf-8">
+    	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title> Windows 10 topics. </title>
+	<meta name="description" content="Information Technology">
+    	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    	<meta name="author" content="GR8">
+    	<link rel="shortcut icon" href="https://krebner.com/networkplus.ico" />
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <script>
+  
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script> 
+    
+<style>
+	.frijol { color:blue; font-size:120%; }
+	.frijolgrande { color:red; font-size:200%; }
+	.lenteja { color:green; font-size:200%; }
+</style>
+</head>
+<body oncontextmenu="alert('Hi there!');return false;" onselectstart="return false" ondragstart="return false" >
+<br>
+<div class="container d-print-none">
+    <br>
+	   <h1>Table of Contents. Windows 10.</h1>
+    <br>
+    <hr>
+
+<span class="frijolgrande">Part 1 - Windows 10 Essentials.</span><br> 
+
+<span class="lenteja">Chapter 1 - What you need to know about Windows 10. Page 3</span><br> 
+
+<span class="frijol">Windows core features . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .4</span><br> 
+<span class="frijol">Windows as a service . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8</span><br> 
+<span class="frijol">The app landscape . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .12</span><br> 
+<span class="frijol">Cloud connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .16</span><br> 
+<span class="frijol">The user experience . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .17</span><br> 
+<span class="frijol">PC hardware . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23</span><br> 
+<span class="frijol">Security and privacy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24</span><br> 
+
+<span class="lenteja">Chapter 2 - Installing, configuring, and deploying Windows 10. Page 27</span><br> 
+<span class="frijol">Before you start . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28</span><br> 
+<span class="frijol">Check for potential compatibility problems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29</span><br> 
+<span class="frijol">Back up your data and settings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30</span><br> 
+<span class="frijol">Download or create installation media . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .31</span><br> 
+<span class="frijol">Choose your installation method . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36</span><br> 
+<span class="frijol">How Windows 10 Setup works . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38</span><br> 
+<span class="frijol">Upgrading from an earlier Windows version . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39</span><br> 
+<span class="frijol">Performing a clean install . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44</span><br> 
+<span class="frijol">Performing an edition upgrade . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .51</span><br> 
+<span class="frijol">Activating Windows . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52</span><br> 
+<span class="frijol">Windows licensing options . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54</span><br> 
+<span class="frijol">Do you need a product key? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55</span><br> 
+<span class="frijol">Managing digital licenses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57</span><br> 
+<span class="frijol">Troubleshooting activation problems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58</span><br> 
+<span class="frijol">Product activation and corporate licensing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62</span><br> 
+<span class="frijol">Managing Windows activation from the command prompt . . . . . . . . . . . . . . . . . . . . . 62</span><br> 
+<span class="frijol">Configuring a multi-boot system . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63</span><br> 
+<span class="frijol">Tweaking and tuning your Windows 10 installation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68</span><br> 
+
+
+
+<span class="lenteja">Chapter 3 - Using Windows 10. Page 69</span><br> 
+
+<span class="frijol">An overview of the Windows 10 user experience . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69</span><br> 
+<span class="frijol">Using and customizing the Windows 10 Start menu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 71</span><br> 
+<span class="frijol">Using and customizing Start . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72</span><br> 
+<span class="frijol">Customizing the contents of Start . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 74</span><br> 
+<span class="frijol">Adding and arranging tiles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .76</span><br> 
+<span class="frijol">Gathering tiles into folders . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 78</span><br> 
+<span class="frijol">Using and customizing the taskbar . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 78</span><br> 
+<span class="frijol">Pinning programs to the taskbar . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .81</span><br> 
+<span class="frijol">Using Jump Lists for quick access to documents and folders . . . . . . . . . . . . . . . . . . . . . .81</span><br> 
+<span class="frijol">Changing the order of taskbar buttons . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83</span><br> 
+<span class="frijol">Pinning people to the taskbar . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83</span><br> 
+<span class="frijol">Changing the taskbar’s size and appearance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 86</span><br> 
+<span class="frijol">Moving the taskbar . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 86</span><br> 
+<span class="frijol">Adding toolbars to the taskbar . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 86</span><br> 
+<span class="frijol">Configuring the taskbar with multiple displays . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87</span><br> 
+<span class="frijol">Customizing the notification area . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88</span><br> 
+<span class="frijol">Using and customizing Action Center . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 89</span><br> 
+<span class="frijol">Customizing the Quick Actions panel . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .91</span><br> 
+<span class="frijol">Customizing notifications . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 92</span><br> 
+<span class="frijol">Switching tasks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 93</span><br> 
+<span class="frijol">Reviewing, revisiting, resuming with Timeline . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 95</span><br> 
+<span class="frijol">Switching between virtual desktops . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 98</span><br> 
+<span class="frijol">Managing and arranging windows . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 98</span><br> 
+<span class="frijol">Using a keyboard and mouse in Windows 10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102</span><br> 
+<span class="frijol">Increasing productivity with keyboard shortcuts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 103</span><br> 
+<span class="frijol">A shortcut for emojis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104</span><br> 
+<span class="frijol">Using alternative keyboard layouts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104</span><br> 
+<span class="frijol">Taming your mouse or other pointing device . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 106</span><br> 
+<span class="frijol">Using Windows 10 on a touchscreen device . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .107</span><br> 
+<span class="frijol">Working in Tablet Mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .107</span><br> 
+<span class="frijol">Using the Touch Keyboard . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 108</span><br> 
+<span class="frijol">Using the Windows Ink workspace . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 112</span><br> 
+<span class="frijol">Setting pen options . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113</span><br> 
+<span class="frijol">Working with fonts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114</span><br> 
+<span class="frijol">Making text easier to read . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115</span><br> 
+<span class="frijol">Using font smoothing to make text easier on the eyes . . . . . . . . . . . . . . . . . . . . . . . . . . . 116</span><br> 
+
+
+<span class="lenteja">Chapter 4 - Personalizing Windows 10. Page117</span><br> 
+
+<span class="frijol">Settings vs. Control Panel . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117</span><br> 
+<span class="frijol">Customizing the visual appearance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 118</span><br> 
+<span class="frijol">Selecting the desktop background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 118</span><br> 
+<span class="frijol">Selecting colors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .122</span><br> 
+<span class="frijol">Customizing the lock screen and sign-in screen . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .125</span><br> 
+<span class="frijol">Fine-tuning visual options . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 127</span><br> 
+<span class="frijol">Customizing mouse pointers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .127</span><br> 
+<span class="frijol">Making other small visual tweaks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 131</span><br> 
+<span class="frijol">Selecting sounds for events . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 131</span><br> 
+<span class="frijol">Personalizing with themes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .133</span><br> 
+
+<span class="frijol">Configuring desktop icons . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133</span><br> 
+<span class="frijol">Eliminating distractions with Focus Assist . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .135</span><br> 
+<span class="frijol">Choosing a screen saver . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .137</span><br> 
+<span class="frijol">Setting date and time, currency, and other regional options . . . . . . . . . . . . . . . . . . . . . . . . . . .138</span><br> 
+<span class="frijol">Overcoming challenges . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 140</span><br> 
+<span class="frijol">Syncing your settings between computers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143</span><br> 
+
+<span class="lenteja">Chapter 5 - Managing updates. Page 147</span><br> 
+
+<span class="frijol">What’s new in Windows Update . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 148</span><br> 
+<span class="frijol">An overview of how Windows 10 update works . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 149</span><br> 
+<span class="frijol">What you get from Windows Update . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 151</span><br> 
+<span class="frijol">Finding technical information about updates . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .153</span><br> 
+<span class="frijol">Managing Windows Update . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .156</span><br> 
+<span class="frijol">Choosing when updates are installed . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 156</span><br> 
+<span class="frijol">Choosing how updates are installed . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .158</span><br> 
+<span class="frijol">Fine-tuning network bandwidth usage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159</span><br> 
+<span class="frijol">Deferring and delaying updates . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .163</span><br> 
+<span class="frijol">Troubleshooting update problems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .167</span><br> 
+
+<span class="frijolgrande">Part II - Productivity. Page 169</span><br> 
+
+<span class="lenteja">Chapter 6 - Installing and configuring apps . 171</span><br> 
+
+<span class="frijol">Understanding the Windows 10 app landscape . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 171</span><br> 
+<span class="frijol">Legacy desktop apps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .174</span><br> 
+<span class="frijol">Modern apps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .174</span><br> 
+<span class="frijol">Packaged desktop apps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .175</span><br> 
+<span class="frijol">Progressive Web Apps (PWAs) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .175</span><br> 
+<span class="frijol">Installing, managing, and uninstalling apps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .176</span><br> 
+<span class="frijol">Using and managing legacy desktop apps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .178</span><br> 
+<span class="frijol">Using and managing Store apps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 181</span><br> 
+<span class="frijol">Deploying line-of-business apps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .189</span><br> 
+<span class="frijol">Managing programs and processes with Task Manager . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .189</span><br> 
+<span class="frijol">Terminating a program with Task Manager . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 191</span><br> 
+<span class="frijol">Finding detailed information about a program . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 191</span><br> 
+<span class="frijol">Reviewing history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .192</span><br> 
+<span class="frijol">Managing startup programs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 194</span><br> 
+<span class="frijol">Other ways a program can be made to run at startup . . . . . . . . . . . . . . . . . . . . . . . . . . 194</span><br> 
+<span class="frijol">Suspending or removing startup items . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 196</span><br> 
+<span class="frijol">Advanced tools for managing startup items . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 198</span><br> 
+<span class="frijol">Setting default programs and file-type associations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .199</span><br> 
+<span class="frijol">Using a nondefault program on a case-by-case basis . . . . . . . . . . . . . . . . . . . . . . . . . . . 202</span><br> 
+<span class="frijol">Turning Windows features on or off . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 203</span><br> 
+<span class="frijol">Setting AutoPlay options . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 204</span><br> 
+
+<span class="lenteja">Chapter 7 - Using and managing built-in Windows apps. Page 207</span><br> 
+
+<span class="frijol">Apps included with Windows 10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 207</span><br> 
+<span class="frijol">Windows system apps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 208</span><br> 
+<span class="frijol">Provisioned Windows apps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 208</span><br> 
+<span class="frijol">Installed apps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 212</span><br> 
+ 
+<span class="frijol">Mail, Calendar, and People . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .212</span><br> 
+<span class="frijol">Setting up and using Mail . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .212</span><br> 
+<span class="frijol">Setting up and using Calendar . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .218</span><br> 
+<span class="frijol">Adding or editing contacts with People . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .221</span><br> 
+<span class="frijol">Using Skype . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .221</span><br> 
+<span class="frijol">Using OneNote . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 223</span><br> 
+<span class="frijol">Using Maps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 224</span><br> 
+<span class="frijol">Searching for places and services . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 225</span><br> 
+<span class="frijol">Getting directions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 225</span><br> 
+<span class="frijol">Sharing maps and creating reminders . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 227</span><br> 
+<span class="frijol">Downloading maps for offline use . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 228</span><br> 
+<span class="frijol">Performing screen captures with Snip & Sketch . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 228</span><br> 
+<span class="frijol">Music, photos, and movies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 230</span><br> 
+<span class="frijol">Music . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 230</span><br> 
+<span class="frijol">Photos and videos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 238</span><br> 
+<span class="frijol">Watching movies, recorded TV shows, and video clips . . . . . . . . . . . . . . . . . . . . . . . . . 250</span><br> 
+<span class="frijol">Projecting to another screen . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 252</span><br> 
+
+<span class="lenteja">Chapter 8 - Using the new Microsoft Edge. Page 255</span><br> 
+
+<span class="frijol">An overview of the new Microsoft Edge . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 256</span><br> 
+<span class="frijol">Choosing an Edge release channel . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 257</span><br> 
+<span class="frijol">Managing Edge updates . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 258</span><br> 
+<span class="frijol">Specifying your default browser . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 259</span><br> 
+<span class="frijol">Setting up Microsoft Edge . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 259</span><br> 
+<span class="frijol">Managing Edge profiles and sync . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 259</span><br> 
+<span class="frijol">Customizing the new tab page . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 262</span><br> 
+<span class="frijol">Privacy and tracking prevention . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 263</span><br> 
+<span class="frijol">Customizing the startup page . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 265</span><br> 
+<span class="frijol">Using the built-in password manager . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 265</span><br> 
+<span class="frijol">Adding and using extensions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 268</span><br> 
+<span class="frijol">Finding and organizing information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 270</span><br> 
+<span class="frijol">Changing the default search provider . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 270</span><br> 
+<span class="frijol">Saving, editing, and organizing Favorites . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .271</span><br> 
+<span class="frijol">Saving and sharing your research as Collections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 272</span><br> 
+<span class="frijol">Finding previously visited pages in History . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 274</span><br> 
+<span class="frijol">Managing tabs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 275</span><br> 
+<span class="frijol">Silencing a noisy tab . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 276</span><br> 
+<span class="frijol">Pinning tabs for quick access . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 277</span><br> 
+<span class="frijol">Privacy and security issues . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 277</span><br> 
+<span class="frijol">Controlling site permissions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 277</span><br> 
+<span class="frijol">Protecting your privacy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 278</span><br> 
+<span class="frijol">Controlling Flash content . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .281</span><br> 
+<span class="frijol">Making webpages easier to read . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 282</span><br> 
+<span class="frijol">Using Microsoft Edge to read and edit PDFs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 284</span><br> 
+
+
+<span class="lenteja">Chapter 9 - Storage and file management. Page 285</span><br> 
+
+<span class="frijol">Organizing personal data with user profile folders
+and libraries . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . . . . 286</span><br> 
+<span class="frijol">What’s what (and where) in your user profile . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 286</span><br> 
+<span class="frijol">Relocating personal data folders . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 289</span><br> 
+<span class="frijol">Using libraries . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .291</span><br> 
+<span class="frijol">Using OneDrive to store, sync, and share files . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 294</span><br> 
+<span class="frijol">How OneDrive and OneDrive for Business work . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 294</span><br> 
+<span class="frijol">Setting up and using OneDrive . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 296</span><br> 
+<span class="frijol">Syncing files and folders . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 300</span><br> 
+<span class="frijol">Sharing OneDrive files and folders . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 301</span><br> 
+<span class="frijol">Using Personal Vault . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 302</span><br> 
+<span class="frijol">Mastering File Explorer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 303</span><br> 
+<span class="frijol">Using the navigation pane . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 308</span><br> 
+<span class="frijol">Navigating faster with Quick Access shortcuts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 309</span><br> 
+<span class="frijol">Layouts, previews, and other ways to arrange files . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 311</span><br> 
+<span class="frijol">Using compressed (zipped) folders . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .313</span><br> 
+<span class="frijol">Sorting, filtering, and grouping in File Explorer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 314</span><br> 
+<span class="frijol">Sorting a folder’s contents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .315</span><br> 
+<span class="frijol">Filtering folder contents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .315</span><br> 
+<span class="frijol">Grouping folder contents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .317</span><br> 
+<span class="frijol">Managing disk space . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .318</span><br> 
+<span class="frijol">Changing default save locations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 322</span><br> 
+<span class="frijol">Cleaning up unneeded files . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 323</span><br> 
+<span class="frijol">Recovering lost, damaged, and deleted files and folders . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 325</span><br> 
+<span class="frijol">Restoring files and folders . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 327</span><br> 
+<span class="frijol">Purging the Recycle Bin . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 328</span><br> 
+<span class="frijol">Managing existing disks and volumes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 328</span><br> 
+<span class="frijol">Extending a volume . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 328</span><br> 
+<span class="frijol">Shrinking a volume . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 330</span><br> 
+<span class="frijol">Deleting a volume . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .331</span><br> 
+<span class="frijol">Converting a FAT32 disk to NTFS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .331</span><br> 
+<span class="frijol">Assigning or changing a volume label . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .331</span><br> 
+<span class="frijol">Assigning and changing drive letters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 332</span><br> 
+<span class="frijol">Mapping a volume to an NTFS folder . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 332</span><br> 
+<span class="frijol">Permanently wiping all data from a disk . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 334</span><br> 
+<span class="frijol">Working with virtual hard disks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 336</span><br> 
+
+<span class="lenteja">Chapter 10 - Cortana and Windows search. Page 339</span><br> 
+
+<span class="frijol">Using Windows search . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 339</span><br> 
+<span class="frijol">What you can (and can no longer) do with Cortana . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 344</span><br> 
+<span class="frijol">Removing Cortana . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 346</span><br> 
+<span class="frijol">Configuring the Windows search index . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 347</span><br> 
+<span class="frijol">Which files and folders are in the index? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 348</span><br> 
+<span class="frijol">Monitoring the index and tuning indexer performance . . . . . . . . . . . . . . . . . . . . . . . . . 351</span><br> 
+<span class="frijol">Managing file properties and metadata . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 353</span><br> 
+<span class="frijol">Searching from File Explorer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 357</span><br> 
+ 
+<span class="frijol">Advanced search tools and techniques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 360</span><br> 
+<span class="frijol">Searching by item type or kind . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 362</span><br> 
+<span class="frijol">Changing the scope of a search . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 362</span><br> 
+<span class="frijol">Searching for item properties . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 363</span><br> 
+<span class="frijol">Using multiple criteria for complex searches . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 364</span><br> 
+<span class="frijol">Using wildcards and character-mode searches . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 365</span><br> 
+<span class="frijol">Searching nonindexed locations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 365</span><br> 
+<span class="frijol">Saving searches and clearing search history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 366</span><br> 
+
+<span class="frijolgrande">Part III - Managing Windows 10. Page 369</span><br> 
+
+<span class="lenteja">Chapter 11 - Managing user accounts, passwords, and credentials . 371</span><br> 
+
+<span class="frijol">Creating and managing user accounts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 372</span><br> 
+<span class="frijol">Choosing an account type . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 374</span><br> 
+<span class="frijol">Changing account settings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 380</span><br> 
+<span class="frijol">Deleting an account . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 382</span><br> 
+<span class="frijol">Making the sign-in process more secure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 384</span><br> 
+<span class="frijol">Adding security with multi-factor authentication . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 386</span><br> 
+<span class="frijol">Using Windows Hello . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 387</span><br> 
+<span class="frijol">Using a picture password . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 390</span><br> 
+<span class="frijol">Setting or changing a password . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 391</span><br> 
+<span class="frijol">Managing a physical security key . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 393</span><br> 
+<span class="frijol">Signing out, switching accounts, or locking your computer . . . . . . . . . . . . . . . . . . . . . . . . . . . 394</span><br> 
+<span class="frijol">Using Dynamic Lock . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 395</span><br> 
+<span class="frijol">Sharing your PC with other users . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 396</span><br> 
+<span class="frijol">Adding a user to your computer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 397</span><br> 
+<span class="frijol">Controlling your family’s computer access . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 399</span><br> 
+<span class="frijol">Restricting use with assigned access . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 402</span><br> 
+<span class="frijol">Introducing access control in Windows . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 402</span><br> 
+<span class="frijol">Permissions and rights . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 406</span><br> 
+<span class="frijol">User accounts and security groups . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 406</span><br> 
+
+<span class="lenteja">Chapter 12 - Performance and power management. Page 411</span><br> 
+
+<span class="frijol">Viewing details about your system . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .412</span><br> 
+<span class="frijol">Systeminfo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 414</span><br> 
+<span class="frijol">Windows Management Instrumentation command-line utility . . . . . . . . . . . . . . . . . .415</span><br> 
+<span class="frijol">System Information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .416</span><br> 
+<span class="frijol">Managing services . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .418</span><br> 
+<span class="frijol">Using the Services console . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .418</span><br> 
+<span class="frijol">Starting and stopping services . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 420</span><br> 
+<span class="frijol">Configuring services . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 420</span><br> 
+<span class="frijol">Managing services from Task Manager . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 424</span><br> 
+<span class="frijol">Monitoring performance with Task Manager . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 425</span><br> 
+<span class="frijol">Using Resource Monitor to pinpoint performance problems . . . . . . . . . . . . . . . . . . . . . . . . . 430</span><br> 
+<span class="frijol">Power management on desktop systems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 432</span><br> 
+<span class="frijol">Configuring power options from the command line . . . . . . . . . . . . . . . . . . . . . . . . . . . . 437</span><br> 
+ 
+
+<span class="lenteja">Chapter 13 - Windows networking. Page 439</span><br>
+ 
+<span class="frijol">Windows 10 networking essentials . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 440</span><br> 
+<span class="frijol">Checking the status of your network . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 441</span><br> 
+<span class="frijol">Network management tools . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .444</span><br> 
+<span class="frijol">TCP/IP configuration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 445</span><br> 
+<span class="frijol">Mobile hotspots and other metered connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .451</span><br> 
+<span class="frijol">Setting the network location . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 454</span><br> 
+<span class="frijol">Connecting to a wireless network . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 456</span><br> 
+<span class="frijol">Connecting to a hidden network . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 459</span><br> 
+<span class="frijol">Wireless security . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 461</span><br> 
+<span class="frijol">Using Hotspot 2.0 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 463</span><br> 
+<span class="frijol">Transferring pictures, links, and other items between nearby devices . . . . . . . . . . . . . . . . . 464</span><br> 
+<span class="frijol">Connecting to another computer with Remote Desktop . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 466</span><br> 
+<span class="frijol">Installing Remote Desktop client software . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 467</span><br> 
+<span class="frijol">Enabling inbound remote desktop connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 468</span><br> 
+<span class="frijol">Using the Remote Desktop app . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 468</span><br> 
+<span class="frijol">Using Remote Desktop Connection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 472</span><br> 
+<span class="frijol">Sharing files, printers, and other resources over a local network . . . . . . . . . . . . . . . . . . . . . . 476</span><br> 
+<span class="frijol">Understanding sharing and security models in Windows . . . . . . . . . . . . . . . . . . . . . . . 477</span><br> 
+<span class="frijol">Configuring your network for sharing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 478</span><br> 
+<span class="frijol">Sharing files and folders from any folder . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 480</span><br> 
+<span class="frijol">Sharing a printer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 484</span><br> 
+<span class="frijol">Finding and using shared resources on a Windows network . . . . . . . . . . . . . . . . . . . . . . . . . . 486</span><br> 
+<span class="frijol">Working with mapped network folders . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 487</span><br> 
+<span class="frijol">Connecting to a network printer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 489</span><br> 
+<span class="frijol">Troubleshooting network problems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 489</span><br> 
+<span class="frijol">Network troubleshooting tools . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 490</span><br> 
+<span class="frijol">Troubleshooting TCP/IP problems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 491</span><br>
+ 
+<span class="lenteja">Chapter 14 - Hardware and devices. Page 499</span><br> 
+
+<span class="frijol">Adding, configuring, and removing hardware devices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 499</span><br> 
+<span class="frijol">Installing a new Plug and Play device . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 500</span><br> 
+<span class="frijol">How device drivers and hardware work together . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 501</span><br> 
+<span class="frijol">Getting useful information from Device Manager . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 504</span><br> 
+<span class="frijol">Enabling and disabling devices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 509</span><br> 
+<span class="frijol">Adjusting advanced device settings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .510</span><br> 
+<span class="frijol">Setting up Bluetooth devices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 511</span><br> 
+<span class="frijol">Managing USB devices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .513</span><br> 
+<span class="frijol">Updating and uninstalling drivers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 514</span><br> 
+<span class="frijol">Disabling automatic driver updates . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .514</span><br> 
+<span class="frijol">Updating a device driver manually . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .515</span><br> 
+<span class="frijol">Rolling back to a previous driver version . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .518</span><br> 
+<span class="frijol">Uninstalling a driver . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .518</span><br> 
+<span class="frijol">Printers and print queues . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 522</span><br> 
+ 
+<span class="frijol">Managing hard disks and other storage devices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 525</span><br> 
+<span class="frijol">Running Disk Management . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 526</span><br> 
+<span class="frijol">Managing disks from the command prompt . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 527</span><br> 
+<span class="frijol">Setting up a new hard disk . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 529</span><br> 
+<span class="frijol">Working with solid-state drives . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 535</span><br> 
+<span class="frijol">Using Storage Spaces . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 536</span><br> 
+<span class="frijol">Configuring displays and graphics adapters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 538</span><br> 
+<span class="frijol">Changing display settings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 539</span><br> 
+<span class="frijol">Controlling scaling on high-DPI displays . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 543</span><br> 
+<span class="frijol">Using multiple displays . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 544</span><br> 
+<span class="frijol">Night Light . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 545</span><br> 
+<span class="frijol">Speakers, microphones, and headsets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 546</span><br> 
+
+<span class="lenteja">Chapter 15 - Troubleshooting, backup, and recovery. Page 549</span><br> 
+
+<span class="frijol">Getting to know your troubleshooting toolkit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 549</span><br> 
+<span class="frijol">Built-in troubleshooters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 549</span><br> 
+<span class="frijol">Windows Error Reporting . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 550</span><br> 
+<span class="frijol">Feedback and diagnostics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 552</span><br> 
+<span class="frijol">Reliability Monitor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 553</span><br> 
+<span class="frijol">Event Viewer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 554</span><br> 
+<span class="frijol">Types of events . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 556</span><br> 
+<span class="frijol">Viewing logs and events . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 557</span><br> 
+<span class="frijol">Customizing the presentation of tabular data in Event Viewer . . . . . . . . . . . . . . . . . . 559</span><br> 
+<span class="frijol">Filtering the log display . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 559</span><br> 
+<span class="frijol">Working with event logs on a remote computer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .561</span><br> 
+<span class="frijol">Dealing with Stop errors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .561</span><br> 
+<span class="frijol">Customizing how Windows handles Stop errors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 561</span><br> 
+<span class="frijol">What’s in a Stop error . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 563</span><br> 
+<span class="frijol">Isolating the cause of a Stop error . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 565</span><br> 
+<span class="frijol">Troubleshooting in Safe Mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 566</span><br> 
+<span class="frijol">Checking disks for errors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 569</span><br> 
+<span class="frijol">Windows 10 backup and recovery options . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 572</span><br> 
+<span class="frijol">Using a recovery drive . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 576</span><br> 
+<span class="frijol">Using File History to protect files and folders . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 577</span><br> 
+<span class="frijol">Using the Reset option to recover from serious problems . . . . . . . . . . . . . . . . . . . . . . 586</span><br> 
+<span class="frijol">Using the Windows 7 Backup program . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 588</span><br> 
+<span class="frijol">Configuring and using System Restore . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 594</span><br> 
+<span class="frijol">Rolling back to a previous restore point . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 597</span><br> 
+
+<span class="frijolgrande">Part IV For IT professionals and Windows experts. Page 599</span><br> 
+
+<span class="lenteja">Chapter 16 - Hyper-V. Page 601</span><br> 
+
+<span class="frijol">Getting started with Hyper-V on Windows 10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 602</span><br> 
+<span class="frijol">Setting up Hyper-V . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 605</span><br> 
+<span class="frijol">Using Hyper-V Manager . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 606</span><br> 
+<span class="frijol">What’s in a virtual machine? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 608</span><br> 
+<span class="frijol">Machine generation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 610</span><br> 
+<span class="frijol">Memory . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 611</span><br> 
+ 
+<span class="frijol">Storage controllers and virtual disks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 612</span><br> 
+<span class="frijol">Networking . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .613</span><br> 
+<span class="frijol">Using Windows Sandbox for instant VMs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 615</span><br> 
+<span class="frijol">Creating and managing virtual machines . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .616</span><br> 
+<span class="frijol">Using Quick Create to configure a new VM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .617</span><br> 
+<span class="frijol">Using the New Virtual Machine Wizard . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 619</span><br> 
+<span class="frijol">Changing settings for a virtual machine . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 626</span><br> 
+<span class="frijol">Fine-tuning virtual memory usage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 628</span><br> 
+<span class="frijol">Adding, removing, and adjusting virtual disks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 630</span><br> 
+<span class="frijol">Advanced security options . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .634</span><br> 
+<span class="frijol">Automatic start and stop actions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 634</span><br> 
+<span class="frijol">Running a virtual machine . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 635</span><br> 
+<span class="frijol">Working with Virtual Machine Connection windows . . . . . . . . . . . . . . . . . . . . . . . . . . . 636</span><br> 
+<span class="frijol">Using enhanced session mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 638</span><br> 
+<span class="frijol">Working with checkpoints . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 641</span><br> 
+<span class="frijol">Importing, exporting, and moving VMs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 643</span><br> 
+<span class="frijol">Alternatives to Hyper-V . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 644</span><br> 
+
+<span class="lenteja">Chapter 17 - Managing business PCs. Page 645</span><br> 
+
+<span class="frijol">Using a domain-based network . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 645</span><br> 
+<span class="frijol">Managing computers with Group Policy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 646</span><br> 
+<span class="frijol">Using Local Group Policy Editor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 648</span><br> 
+<span class="frijol">Changing policy settings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 649</span><br> 
+<span class="frijol">Management tools for enterprise deployments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 650</span><br> 
+<span class="frijol">Microsoft Intune . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .651</span><br> 
+<span class="frijol">Microsoft Endpoint Configuration Manager . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 651</span><br> 
+<span class="frijol">Windows Server Update Services (WSUS) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .651</span><br> 
+<span class="frijol">Managing apps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .651</span><br> 
+<span class="frijol">Managing app distribution in an organization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .651</span><br> 
+<span class="frijol">Securing apps with AppLocker . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 652</span><br> 
+<span class="frijol">Managing the browsing experience . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 652</span><br> 
+<span class="frijol">Managing special-purpose computers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 655</span><br> 
+<span class="frijol">Using shared PC mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 655</span><br> 
+<span class="frijol">Setting up a kiosk device . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 656</span><br> 
+
+<span class="lenteja">Chapter 18 - Windows security and privacy. Page 659</span><br> 
+
+<span class="frijol">Understanding security threats . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 659</span><br> 
+<span class="frijol">New security features in Windows 10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 662</span><br> 
+<span class="frijol">Securing devices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 662</span><br> 
+<span class="frijol">Securing data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 663</span><br> 
+<span class="frijol">Securing identities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 664</span><br> 
+<span class="frijol">Blocking malware . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 664</span><br> 
+<span class="frijol">Configuring privacy options . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 665</span><br> 
+<span class="frijol">Monitoring your computer’s security . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 669</span><br> 
+<span class="frijol">Preventing unsafe actions with User Account Control . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 670</span><br> 
+<span class="frijol">What triggers UAC prompts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .671</span><br> 
+<span class="frijol">Dealing with UAC prompts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 673</span><br> 
+<span class="frijol">Modifying UAC settings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 675</span><br> 
+ 
+<span class="frijol">Blocking malware . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 678</span><br> 
+<span class="frijol">Using Microsoft Defender Antivirus . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 678</span><br> 
+<span class="frijol">Manually scanning for malware . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 679</span><br> 
+<span class="frijol">Dealing with detected threats . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 680</span><br> 
+<span class="frijol">Blocking ransomware with controlled folder access . . . . . . . . . . . . . . . . . . . . . . . . . . . . 680</span><br> 
+<span class="frijol">Stopping unknown or malicious programs with Microsoft Defender SmartScreen . . . . . 681</span><br> 
+<span class="frijol">Blocking intruders with Windows Defender Firewall . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 682</span><br> 
+<span class="frijol">Using Windows Defender Firewall with different network types . . . . . . . . . . . . . . . . 683</span><br> 
+<span class="frijol">Managing Windows Defender Firewall . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 683</span><br> 
+<span class="frijol">Restoring default settings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 687</span><br> 
+<span class="frijol">Advanced tools for managing Windows Defender Firewall . . . . . . . . . . . . . . . . . . . . . 687</span><br> 
+<span class="frijol">Encrypting information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 689</span><br> 
+<span class="frijol">Encrypting with BitLocker and BitLocker To Go . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .689</span><br> 
+<span class="frijol">Using the Encrypting File System . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 692</span><br> 
+
+<span class="lenteja">Chapter 19 - PowerShell and other advanced management tools. Page 695</span><br> 
+
+<span class="frijol">Command Prompt or PowerShell? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 696</span><br> 
+<span class="frijol">Using Windows Terminal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 697</span><br> 
+<span class="frijol">Opening and working with tabs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 697</span><br> 
+<span class="frijol">Configuring Windows Terminal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 698</span><br> 
+<span class="frijol">Using the mouse to change text size . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 698</span><br> 
+<span class="frijol">An introduction to Windows PowerShell . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 699</span><br> 
+<span class="frijol">Starting PowerShell . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 700</span><br> 
+<span class="frijol">Interacting with PowerShell . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .701</span><br> 
+<span class="frijol">Scripting with PowerShell . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .712</span><br> 
+<span class="frijol">Finding additional PowerShell resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .716</span><br> 
+<span class="frijol">Working in a Command Prompt session . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .716</span><br> 
+<span class="frijol">Running with elevated privileges . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .717</span><br> 
+<span class="frijol">Starting Command Prompt at a particular folder . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .717</span><br> 
+<span class="frijol">Starting Command Prompt and running a command . . . . . . . . . . . . . . . . . . . . . . . . . . .717</span><br> 
+<span class="frijol">Using AutoRun to execute commands when Command Prompt starts . . . . . . . . . . .718</span><br> 
+<span class="frijol">Editing the command line . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .718</span><br> 
+<span class="frijol">Using command symbols . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .719</span><br> 
+<span class="frijol">Editing the Windows registry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 722</span><br> 
+<span class="frijol">Understanding the Registry Editor hierarchy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 723</span><br> 
+<span class="frijol">Registry values and data types . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 725</span><br> 
+<span class="frijol">Browsing and editing with Registry Editor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 727</span><br> 
+<span class="frijol">Backing up and restoring parts of the registry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 728</span><br> 
+<span class="frijol">Automating registry changes with .reg files . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 730</span><br> 
+<span class="frijol">Registry virtualization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 733</span><br> 
+<span class="frijol">Automating tasks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 734</span><br> 
+<span class="frijol">Task Scheduler . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 734</span><br> 
+<span class="frijol">Automating command sequences with batch programs . . . . . . . . . . . . . . . . . . . . . . . . 734</span><br> 
+<span class="frijol">Automating tasks with Windows Script Host . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 735</span><br> 
+<span class="frijol">Using Microsoft Management Console . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 735</span><br> 
+
+
+<span class="lenteja">Chapter 20 - Maximizing productivity on mobile devices. Page 739</span><br>
+ 
+<span class="frijol">Managing battery life . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 739</span><br> 
+<span class="frijol">Battery Saver and other power management options . . . . . . . . . . . . . . . . . . . . . . . . . . 742</span><br> 
+<span class="frijol">Monitoring long-term battery life and capacity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 743</span><br> 
+<span class="frijol">Mobile connectivity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 744</span><br> 
+<span class="frijol">Storage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 746</span><br> 
+<span class="frijol">Windows 10 and your mobile phone . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 747</span><br> 
+
+</div>
+
+<br>
+    
+
+    
+
+ <img src="https://krebner.com/solids.svg"
+      class="img-fluid mx-auto d-block">   
+    
+    <!--
+style="background-color: rgb(255, 255, 255);background-image: linear-gradient(-90deg, yellow, lightblue, lightgreen);"
+-->
+    
+<!-- These Javascript links are required for the proper functionality of Bootstrap 4. 
+And they should always be placed at the very end, near to the closing body tag. Exactly where they are right now. -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
